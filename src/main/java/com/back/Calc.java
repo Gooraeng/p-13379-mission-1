@@ -1,9 +1,13 @@
 package com.back;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Calc {
 
     public static int run(String exp) {
         String[] tokens = exp.split("\\s+");
+        Collections.reverse(Arrays.asList(tokens));
 
         // 시작값
         int answer = Integer.parseInt(tokens[0]);
